@@ -8,4 +8,4 @@ router.get('/', (req, res) =>{
     res.json({ hello: 'hello world' });
 });
 
-export default router;
+export = router;

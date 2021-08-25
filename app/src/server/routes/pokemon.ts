@@ -1,7 +1,8 @@
-import { Request, Response } from 'express';
+import { Router } from 'express';
+import { getLisPokemonByTypeController } from '../controller/pokemonController';
 
-const pokemon = (req: Request, res: Response) => {
-    res.send('API POKEMON')
-};
+const router: Router = Router();
 
-export default pokemon;
+router.get('/:typeId', getLisPokemonByTypeController);
+
+export = router;

@@ -3,7 +3,8 @@ type TEnv = string | number | boolean| undefined;
 type TServer = {
   port: TEnv;
   killTimeout: TEnv;
-  dev: TEnv
+  dev: TEnv;
+  pokemonApiUrl: TEnv;
 };
 
 type Tables = {

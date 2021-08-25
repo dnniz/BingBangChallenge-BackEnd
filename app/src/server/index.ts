@@ -1,10 +1,13 @@
 import express, { Application } from 'express';
+import http from 'http';
 
-import { server } from '../config';
-import routes from '../server/routes';
+import config from '../config';
 
-const { port } = server;
+const routes = require('./routes');
+
+const { server: { port } } = config;
 const app: Application = express();
+const server = http.createServer(app);
 
 app.use(express.json());
 app.use('/', routes);
