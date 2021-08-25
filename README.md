@@ -15,3 +15,9 @@ Este es un proyecto de prueba con la finalidad de medir los skills del programad
 - express.js
 - axios: Para realizar request.
 
+
+Para desplegar servidor:
+npm run dev
+
+Para verificar pruebas:
+npm run test
