@@ -7,7 +7,7 @@ const getLisPokemonByTypeController = async (req: Request, res: Response, next: 
 
         typeId = !typeId ? '0' : typeId.toString();
 
-        const pokemons = await pokemonService.getListPokemonByTypeService(typeId);
+        const pokemons = await pokemonService.getListPokemonByIdService(typeId);
 
         res.status(200).json(pokemons);
     } catch (error) {

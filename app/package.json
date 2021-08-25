@@ -8,7 +8,10 @@
     "start": "npm run build && node ./build/src/server/index.js",
     "start-dev": "nodemon -e ts  --ignore build/ --exec \"tsc && DEBUG=true node build/server/index.js\"",
     "build": "rm -rf ./build && tsc -p .",
-    "watch": "ts-node ./src/server/index.ts"
+    "watch": "ts-node ./src/server/index.ts",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "keywords": [],
   "author": "Dennis Pineda",
