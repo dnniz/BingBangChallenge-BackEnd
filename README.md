@@ -8,8 +8,6 @@ Este es un proyecto de prueba con la finalidad de medir los skills del programad
 
 - Node.js v12
 - TypeScript
-- swagger-ui-express.q
-- Docker.
 - Test: Jest.
 - config: Para manejar diferentes archivos de configuración por cada entorno.
 - express.js
